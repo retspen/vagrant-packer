@@ -1,7 +1,7 @@
 {
     "variables": {
         "ssh_name": "vagrant",
-        "ssh_pass": "vagrant",
+        "ssh_pass": "vagrant"
     },
     "builders": [{
         "type": "virtualbox-iso",
