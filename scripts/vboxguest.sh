@@ -5,7 +5,7 @@ if type apt-get >/dev/null 2>&1; then
 fi
 
 if type yum >/dev/null 2>&1; then
-    yum -y install make gcc kernel-devel
+    yum -y install gcc kernel-devel-$(uname -r)
 fi
 
 mkdir /tmp/virtualbox
