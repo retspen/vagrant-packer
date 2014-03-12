@@ -12,7 +12,7 @@
         "disk_size": 40960,
 
         "iso_url": "http://mirrors.kernel.org/centos/6.5/isos/i386/CentOS-6.5-i386-minimal.iso",
-        "iso_checksum": "f21a71e8e31df73297bdd1ccd4a64a36831284bd",
+        "iso_checksum": "4f900bba81d0e3c5cc5354a94984ed2fa03d4061",
         "iso_checksum_type": "sha1",
 
         "boot_command": [
