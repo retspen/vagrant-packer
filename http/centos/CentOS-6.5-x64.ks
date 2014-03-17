@@ -3,37 +3,23 @@ url --url http://mirrors.kernel.org/centos/6.5/os/x86_64/
 
 lang en_US.UTF-8
 keyboard us
-timezone Europe/Zaporozhye
-
-network --bootproto=dhcp --hostname=centos64
+network --onboot no --device eth0 --bootproto dhcp --noipv6
 rootpw --plaintext r00tme
+firewall --service=ssh
 authconfig --enableshadow --passalgo=sha512
-
-firewall --disabled
-#firewall --enabled --http --ssh --port=443:tcp
-selinux --disabled
-bootloader --location=mbr
-text
-skipx
-
-logging --level=info
-zerombr
-
+selinux --enforcing
+timezone --utc America/New_York
+bootloader --location=mbr --driveorder=sda --append="crashkernel=auto rhgb quiet"
 clearpart --all --initlabel
 autopart
-
-auth  --useshadow  --enablemd5
-firstboot --disabled
+zerombr
+skipx
+text
 reboot
-
-services --enabled=acpid,sshd
 
 %packages --nobase
 @core
-openssh-server
-openssh-clients
 wget
-acpid
 bzip2
 perl
 -aic94xx-firmware
