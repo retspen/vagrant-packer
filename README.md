@@ -1,7 +1,6 @@
 # Vagrant Packer
 
-* Website: http://www.packer.io
+### Box for vagrant
 
-Ubuntu 12.04 - 64bit
-
-CentOS 6.5 - 64bit
+ * Ubuntu 12.04 (server)
+ * CentOS 6.5 (minimal)
