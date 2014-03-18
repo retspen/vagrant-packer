@@ -2,7 +2,7 @@
   "variables": {
         "ssh_name": "vagrant",
         "ssh_pass": "vagrant",
-        "hostname": "precise64"
+        "hostname": "precise"
   },
   "builders": [{
     "type": "virtualbox-iso",
@@ -50,8 +50,8 @@
     "type": "shell",
     "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
     "scripts": [
-      "scripts/vagrant.sh",
       "scripts/vboxguest.sh",
+      "scripts/vagrant.sh",
       "scripts/compact.sh"
     ]
   }]

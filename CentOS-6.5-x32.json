@@ -16,7 +16,7 @@
         "iso_checksum_type": "sha1",
 
         "boot_command": [
-            "<tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/centos/CentOS-6.5-x32.ks<enter><wait>"
+            "<tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/centos/CentOS-6.5.ks<enter><wait>"
         ],
         "boot_wait": "12s",
 
@@ -43,8 +43,8 @@
         "type": "shell",
         "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
         "scripts": [
-            "scripts/vagrant.sh",
             "scripts/vboxguest.sh",
+            "scripts/vagrant.sh",
             "scripts/compact.sh"
         ]
     }]

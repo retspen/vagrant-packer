@@ -8,7 +8,7 @@ if type apt-get >/dev/null 2>&1; then
 fi
 
 if type yum >/dev/null 2>&1; then
-    yum -y remove kernel-devel glibc-devel cpp gcc
+    yum -y remove glibc-headers glibc-devel libgomp mpfr cloog-ppl ppl kernel-devel glibc-devel wget cpp gcc perl* 
     yum clean all
 fi
 
