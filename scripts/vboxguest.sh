@@ -12,6 +12,10 @@ mkdir /tmp/virtualbox
 VERSION=$(cat /home/vagrant/.vbox_version)
 mount -o loop /home/vagrant/VBoxGuestAdditions_$VERSION.iso /tmp/virtualbox
 sh /tmp/virtualbox/VBoxLinuxAdditions.run
+# Fix Virtualbox 4.3.10
+if type apt-get >/dev/null 2>&1; then
+    ln -sf /opt/VBoxGuestAdditions-$VERSION/lib/VBoxGuestAdditions /usr/lib/VBoxGuestAdditions
+fi
 umount /tmp/virtualbox
 rmdir /tmp/virtualbox
 rm /home/vagrant/*.iso

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if type apt-get >/dev/null 2>&1; then
-    apt-get -y remove build-essential make linux-headers*
+    apt-get -y remove build-essential make dkms
     apt-get -y autoremove
     apt-get clean
     rm -f /var/lib/dhcp3/*
