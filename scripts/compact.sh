@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if type apt-get >/dev/null 2>&1; then
-    apt-get -y remove build-essential make dkms
+    apt-get -y remove build-essential make dkms libgomp1 libmpfr4 libquadmath0 libmpc2 binutils libc-dev-bin linux-libc-dev libc6-dev cpp gcc libdpkg-perl dpkg-dev fakeroot libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl manpages-dev
     apt-get -y autoremove
     apt-get clean
     rm -f /var/lib/dhcp3/*

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if type apt-get >/dev/null 2>&1; then
-    apt-get -y install build-essential dkms linux-headers-$(uname -r)
+    apt-get -y install build-essential dkms
 fi
 
 if type yum >/dev/null 2>&1; then
@@ -12,7 +12,7 @@ mkdir /tmp/virtualbox
 VERSION=$(cat /home/vagrant/.vbox_version)
 mount -o loop /home/vagrant/VBoxGuestAdditions_$VERSION.iso /tmp/virtualbox
 sh /tmp/virtualbox/VBoxLinuxAdditions.run
-# Fix Virtualbox 4.3.10
+# Ubuntu Fix Virtualbox 4.3.10
 if type apt-get >/dev/null 2>&1; then
     ln -sf /opt/VBoxGuestAdditions-$VERSION/lib/VBoxGuestAdditions /usr/lib/VBoxGuestAdditions
 fi
