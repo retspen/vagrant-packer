@@ -16,7 +16,7 @@
         "iso_checksum_type": "sha1",
 
         "boot_command": [
-            "<tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/centos/CentOS-6.5.ks<enter><wait>"
+            "<tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/centos6/CentOS-6.5.ks<enter><wait>"
         ],
         "boot_wait": "12s",
 

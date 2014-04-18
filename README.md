@@ -2,8 +2,9 @@
 
 ### Box for vagrant
 
- * Ubuntu 12.04 (server)
- * CentOS 6.5 (minimal)
+* Ubuntu 14.04 (server)
+* Ubuntu 12.04.04 (server)
+* CentOS 6.5 (minimal)
 
 ### Usage
 
