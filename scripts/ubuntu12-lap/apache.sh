@@ -12,12 +12,6 @@ cat << EOF > /etc/apache2/sites-available/default
                 Options FollowSymLinks
                 AllowOverride All
         </Directory>
-        <Directory /var/www>
-                Options Indexes FollowSymLinks MultiViews
-                AllowOverride None
-                Order allow,deny
-                allow from all
-        </Directory>
 
         ErrorLog ${APACHE_LOG_DIR}/error.log
 
