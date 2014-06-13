@@ -30,7 +30,7 @@
 
         "vboxmanage": [
             ["modifyvm", "{{.Name}}", "--memory", "512"],
-            ["modifyvm", "{{.Name}}", "--cpus", "1"]
+            ["modifyvm", "{{.Name}}", "--cpus", "2"]
         ],
 
         "shutdown_command": "echo '{{user `ssh_name`}}'|sudo -S /sbin/halt -h -p"
