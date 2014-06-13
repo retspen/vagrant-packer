@@ -33,17 +33,17 @@
     "shutdown_command": "echo '{{user `ssh_name`}}'|sudo -S /sbin/halt -h -p"
   }],
   "post-processors": [{
-    "output": "build/Ubuntu-12.04.4-x32-apache.box",
+    "output": "build/Ubuntu-12.04.4-x32-lap.box",
     "type": "vagrant"
   }],
   "provisioners": [{
     "type": "shell",
     "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
     "scripts": [
-      "scripts/vboxguest.sh",
-      "scripts/vagrant.sh",
-      "scripts/apache.sh",
-      "scripts/compact.sh"
+      "scripts/ubuntu12-lap/vboxguest.sh",
+      "scripts/ubuntu12-lap/vagrant.sh",
+      "scripts/ubuntu12-lap/apache.sh",
+      "scripts/ubuntu12-lap/compact.sh"
     ]
   }]
 }
