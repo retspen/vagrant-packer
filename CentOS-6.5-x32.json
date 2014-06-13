@@ -10,6 +10,7 @@
 
         "guest_os_type": "RedHat",
         "disk_size": 20480,
+        "hard_drive_interface": "sata",
 
         "iso_url": "http://mirrors.kernel.org/centos/6.5/isos/i386/CentOS-6.5-i386-minimal.iso",
         "iso_checksum": "4f900bba81d0e3c5cc5354a94984ed2fa03d4061",
@@ -29,8 +30,8 @@
         "ssh_wait_timeout": "10000s",
 
         "vboxmanage": [
-            ["modifyvm", "{{.Name}}", "--memory", "512"],
-            ["modifyvm", "{{.Name}}", "--cpus", "1"]
+            ["modifyvm", "{{.Name}}", "--memory", "384"],
+            ["modifyvm", "{{.Name}}", "--cpus", "2"]
         ],
 
         "shutdown_command": "echo '{{user `ssh_name`}}'|sudo -S /sbin/halt -h -p"
