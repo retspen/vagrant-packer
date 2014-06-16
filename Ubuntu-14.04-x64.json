@@ -17,17 +17,6 @@
     "iso_checksum": "4d94f6111b8fe47da94396180ce499d8c0bb44f3",
     "iso_checksum_type": "sha1",
 
-    "boot_command": [
-      "<esc><esc><enter><wait>",
-      "/install/vmlinuz noapic",
-      "preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/precise/preseed.cfg ",
-      "debian-installer=en_US auto locale=en_US kbd-chooser/method=us ",
-      "hostname={{user `hostname`}} ",
-      "fb=false debconf/frontend=noninteractive ",
-      "keyboard-configuration/modelcode=SKIP keyboard-configuration/layout=USA ",
-      "keyboard-configuration/variant=USA console-setup/ask_detect=false ",
-      "initrd=/install/initrd.gz -- <enter>"
-    ],
     "boot_wait": "12s",
 
     "http_directory": "http",
