@@ -12,7 +12,6 @@
         "disk_size": 20480,
         "hard_drive_interface": "sata",
 
-
         "iso_url": "http://mirrors.kernel.org/centos/6.5/isos/x86_64/CentOS-6.5-x86_64-minimal.iso",
         "iso_checksum": "f21a71e8e31df73297bdd1ccd4a64a36831284bd",
         "iso_checksum_type": "sha1",

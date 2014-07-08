@@ -8,16 +8,16 @@
         "virtualbox_version_file": ".vbox_version",
         "headless": false,
 
-        "guest_os_type": "Fedora_64",
+        "guest_os_type": "RedHat_64",
         "disk_size": 20480,
         "hard_drive_interface": "sata",
 
-        "iso_url": "http://dl.fedoraproject.org/pub/fedora/linux/releases/20/Fedora/x86_64/iso/Fedora-20-x86_64-netinst.iso",
-        "iso_checksum": "376be7d4855ad6281cb139430606a782fd6189dcb01d7b61448e915802cc350f",
+        "iso_url": "http://mirror.linux.lg.ua/centos/7.0.1406/isos/x86_64/CentOS-7.0-1406-x86_64-NetInstall.iso",
+        "iso_checksum": "df6dfdd25ebf443ca3375188d0b4b7f92f4153dc910b17bccc886bd54a7b7c86",
         "iso_checksum_type": "sha256",
 
         "boot_command": [
-            "<tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/fedora20/anaconda-ks.cfg<enter><wait>"
+            "<tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/centos7/anaconda-ks.cfg<enter><wait>"
         ],
         "boot_wait": "12s",
 
@@ -37,16 +37,16 @@
         "shutdown_command": "echo '{{user `ssh_name`}}'|sudo -S /sbin/halt -h -p"
     }],
     "post-processors": [{
-        "output": "build/Fedora-20-x64.box",
+        "output": "build/CentOS-7.box",
         "type": "vagrant"
     }],
     "provisioners": [{
         "type": "shell",
         "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
         "scripts": [
-            "scripts/fedora20/vboxguest.sh",
-            "scripts/fedora20/vagrant.sh",
-            "scripts/fedora20/compact.sh"
+            "scripts/centos7/vboxguest.sh",
+            "scripts/centos7/vagrant.sh",
+            "scripts/centos7/compact.sh"
         ]
     }]
 }
