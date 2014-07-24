@@ -37,7 +37,7 @@
         "shutdown_command": "echo '{{user `ssh_name`}}'|sudo -S /sbin/halt -h -p"
     }],
     "post-processors": [{
-        "output": "build/CentOS-6.5-x64.box",
+        "output": "build/CentOS-6.5.box",
         "type": "vagrant"
     }],
     "provisioners": [{
