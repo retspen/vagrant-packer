@@ -9,7 +9,7 @@
     "headless": false,
 
     "guest_os_type": "Ubuntu_64",
-    "disk_size": 20480,
+    "disk_size": 81920,
     "hard_drive_interface": "sata",
 
     "iso_url": "http://releases.ubuntu.com/14.04/ubuntu-14.04-server-amd64.iso",

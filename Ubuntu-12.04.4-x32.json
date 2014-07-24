@@ -10,7 +10,7 @@
     "headless": false,
 
     "guest_os_type": "Ubuntu",
-    "disk_size": 20480,
+    "disk_size": 81920,
     "hard_drive_interface": "sata",
 
     "iso_url": "http://releases.ubuntu.com/12.04/ubuntu-12.04.4-server-i386.iso",

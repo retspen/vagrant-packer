@@ -9,7 +9,7 @@
         "headless": false,
 
         "guest_os_type": "RedHat_64",
-        "disk_size": 20480,
+        "disk_size": 81920,
         "hard_drive_interface": "sata",
 
         "iso_url": "http://mirror.linux.lg.ua/centos/7/isos/x86_64/CentOS-7.0-1406-x86_64-DVD.iso",
