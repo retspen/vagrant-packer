@@ -41,11 +41,9 @@
     "type": "shell",
     "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
     "scripts": [
-      "scripts/ubuntu14-nlmp/vboxguest.sh",
-      "scripts/ubuntu14-nlmp/vagrant.sh",
-      "scripts/ubuntu14-nlmp/compact.sh",
-      "scripts/ubuntu14-nlmp/nginx.sh",
-      "scripts/ubuntu14-nlmp/php.sh"
+      "scripts/ubuntu14/vboxguest.sh",
+      "scripts/ubuntu14/vagrant.sh",
+      "scripts/ubuntu14/compact.sh"
     ]
   }]
 }
