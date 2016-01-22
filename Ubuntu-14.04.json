@@ -12,8 +12,8 @@
     "disk_size": 81920,
     "hard_drive_interface": "sata",
 
-    "iso_url": "http://releases.ubuntu.com/14.04/ubuntu-14.04-server-amd64.iso",
-    "iso_checksum": "4d94f6111b8fe47da94396180ce499d8c0bb44f3",
+    "iso_url": "http://releases.ubuntu.com/trusty/ubuntu-14.04.3-server-amd64.iso",
+    "iso_checksum": "9e5fecc94b3925bededed0fdca1bd417",
     "iso_checksum_type": "sha1",
 
     "boot_wait": "12s",
